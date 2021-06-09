@@ -1,0 +1,417 @@
+/*  classes for test  */
+
+.example_block {
+    width: 100px;
+    height: 200px;
+    background-color: #0a58ca;
+}
+
+.example_block2 {
+    width: 300px;
+    height: 200px;
+    background-color: #006699;
+}
+
+body {
+    background-color: #B5C7F9;
+    font-family: "Poppins", sans-serif;!important;
+}
+
+
+/*  Main Block  */
+
+.inner_main_block {
+    background-color: #ECF3FC;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #9fafdd;
+}
+
+.block {
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/*  Header  */
+
+.header {
+    padding-bottom: 50px;
+}
+
+
+/*  Menu  */
+
+.menu_btn {
+    color: gray;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+.menu_btn hr {
+    padding: 0;
+    margin: 0 auto;
+    width: 10px;
+    height: 3px;
+    background-color: blue;
+    border-radius: 3px;
+    opacity: 0;
+}
+
+.menu_btn:hover {
+    color: black;
+    transition: .2s;
+}
+
+.menu_btn:hover hr {
+    opacity: 1;
+    transition: .2s;
+}
+
+
+/*  Profile  */
+
+.prof_icon {
+    background-color: white;
+    border-radius: 12px;
+    padding: 7px 10px;
+    margin: 0 10px;
+}
+
+.prof_btn {
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+    border: none;
+}
+
+.prof_img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 100%;
+    margin: 0;
+}
+
+.prof_name {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*  Main block  */
+
+/*  Popular carousel  */
+
+.icon {
+    border: none;
+    background-color: white;
+    border-radius: 12px;
+    padding: 7px 10px;
+    margin: 0 10px;
+}
+
+.owl-nav span {
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: grey;
+}
+
+.image-img {
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+
+}
+
+.image-img-ongoing {
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+
+}
+
+.image-block {
+    border-radius: 15px;
+    margin: 15px 15px 50px;
+}
+
+div.image-block .image-img {
+    position: relative;
+    width: auto;
+}
+div.image-block div.image {
+    position: relative;
+    text-align: center;
+}
+div.image-shadow {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 5%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: inherit;
+    -webkit-filter: blur(25px);
+    filter: blur(15px);
+}
+
+
+/*  Anime page  */
+
+.anime_poster img {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.name_title h3 {
+    font-weight: bold;
+}
+
+.genre_item {
+    background-color: #ECF3FC;
+    border-radius: 10px;
+    padding: 8px;
+    color: gray;
+    margin: 0 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.rate {
+    padding: 10px;
+    background-color: #0a58ca;
+    border-radius: 20px;
+    text-align: center;
+    height: 50px;
+}
+
+.rate i {
+    color: yellow;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.rate h3 {
+    color: whitesmoke;
+}
+
+
+/*  Series  */
+
+.tabs {
+    font-size: 0;
+
+}
+
+.tabs>input[type="radio"] {
+    display: none;
+    border-radius: 10px;
+}
+
+.tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3 {
+    display: block;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #dbdbdb;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    color: gray;
+}
+
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: #fff;
+    color: #0b5ed7;
+}
+
+.tab-content {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.about_header {
+    width: 90%;
+}
+
+.about_header div {
+    height: 400px;
+}
+
+.about_header_image img {
+    height: inherit;
+}
+
+.about_header_image {
+    margin-left: 300px;
+}
+
+.about_header h1 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.about_header_title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: purple;
+}
+
+.about_header_hr {
+    height: 3px;
+    border: none;
+    background-color: purple;
+    border-radius: 3px;
+}
+
+.about_header_icons i {
+    font-size: 25px;
+    padding-right: 10px;
+    color: gray(30);
+}
+
+.about_teams h1 {
+    font-size: 50px;
+}
+
+.about_teams_image > div {
+    width: 30%;
+    height: 500px;
+    background-color: black;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_teams_image div div {
+    width: 70%;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+    bottom: -400px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.about_goal {
+
+}
+
+.about_goal hr {
+    height: 4px;
+    border-radius: 3px;
+    border: none;
+    background-color: purple;
+    width: 20%;
+}
+
+.about_goal_images > div {
+    width: 30%;
+}
+
+.about_goal_images img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.about_position_image {
+    height: 300px;
+    width: 80%;
+    background-color: purple;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_position_text {
+    height: 200px;
+    width: 70%;
+    position: relative;
+    top: -100px;
+    left: -120px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.about_position_text hr {
+    height: 4px;
+    border-radius: 3px;
+    border: none;
+    background-color: purple;
+    width: 50px;
+    margin: 20px 10px;
+}
+
+.about_position_text p {
+    padding-left: 70px;
+    line-height: 2;
+}
+
+.about_position_text h1 {
+    font-weight: bold;
+}
+
+
+@font-face {
+// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+font-family: "MainFont";
+// адрес шрифта и тип
+src: url("fonts/main_font.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
